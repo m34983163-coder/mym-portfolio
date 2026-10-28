@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohammed Yasser Mohammed | Software Engineer & Image Designer</title>
+  <meta name="description" content="Portfolio of Mohammed Yasser Mohammed, a software engineer and image designer from Suez, Egypt.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="mouse-glow" aria-hidden="true"></div>
+
+  <!-- NAVIGATION -->
+  <header class="nav">
+    <a href="#home" class="logo" aria-label="MYM home">MYM</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu" class="menu" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero reveal">
+      <div class="hero-text">
+        <span class="badge"><i></i> AVAILABLE FOR WORK</span>
+        <h1>Hi, I'm <span class="grad">Mohammed Yasser Mohammed</span></h1>
+        <p class="subtitle">Software Engineer &amp; Image Designer</p>
+        <p class="lead">I build clean software and design creative visuals. I love turning ideas into modern digital experiences that look good and work well.</p>
+        <div class="btns">
+          <a href="#contact" class="btn primary">Let's Work Together</a>
+          <a href="#portfolio" class="btn ghost">Explore My Portfolio</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="ring"><div class="avatar">
+          <!-- If profile.jpg is missing, JavaScript hides it and the MYM placeholder shows -->
+          <span class="placeholder" aria-hidden="true">MYM</span>
+          <img src="profile.jpg" alt="Portrait of Mohammed Yasser Mohammed" id="profileImg" width="400" height="400">
+        </div></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <h2>About <span class="grad">Me</span></h2>
+      <p class="intro">I'm Mohammed Yasser Mohammed, a software engineering enthusiast and image designer from Suez, Egypt. I enjoy combining technology and creativity to build modern digital experiences and create visually appealing designs. I'm always looking to improve my skills, explore new technologies, and collaborate on exciting projects.</p>
+      <div class="cards four">
+        <div class="card"><small>Full Name</small><strong>Mohammed Yasser Mohammed</strong></div>
+        <div class="card"><small>Profession</small><strong>Software Engineer &amp; Image Designer</strong></div>
+        <div class="card"><small>Location</small><strong>Suez, Egypt</strong></div>
+        <div class="card"><small>Marital Status</small><strong>Single</strong></div>
+      </div>
+    </section>
+
+    <!-- SKILLS (areas of interest / services) -->
+    <section id="skills" class="section reveal">
+      <h2>Skills &amp; <span class="grad">Services</span></h2>
+      <p class="intro">Areas I work in and enjoy learning more about.</p>
+      <div class="cards four">
+        <div class="card"><span class="ico">&lt;/&gt;</span><strong>Software Development</strong></div>
+        <div class="card"><span class="ico">&#9638;</span><strong>Frontend Development</strong></div>
+        <div class="card"><span class="ico">&#9998;</span><strong>Web Design</strong></div>
+        <div class="card"><span class="ico">&#9680;</span><strong>UI/UX Design</strong></div>
+        <div class="card"><span class="ico">&#9728;</span><strong>Image Editing</strong></div>
+        <div class="card"><span class="ico">&#10070;</span><strong>Graphic Design</strong></div>
+        <div class="card"><span class="ico">&#9647;</span><strong>Responsive Web Design</strong></div>
+        <div class="card"><span class="ico">&#9889;</span><strong>Creative Problem Solving</strong></div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO: placeholders. Edit title, text, link, and image in each <article>. -->
+    <section id="portfolio" class="section reveal">
+      <h2>My <span class="grad">Portfolio</span></h2>
+      <p class="intro">Example project cards. Replace them with your real work.</p>
+      <div class="cards two">
+        <article class="card project">
+          <div class="thumb t1"><!-- To use an image: <img src="project1.jpg" alt="..."> --><span>Placeholder</span></div>
+          <small class="cat">Web Development</small>
+          <h3>Web Development Projects</h3>
+          <p>Websites and web apps built with clean, simple code.</p>
+          <a href="#contact" class="link">View project</a>
+        </article>
+        <article class="card project">
+          <div class="thumb t2"><span>Placeholder</span></div>
+          <small class="cat">Image Design</small>
+          <h3>Creative Image Designs</h3>
+          <p>Photo edits and visual designs with a creative style.</p>
+          <a href="#contact" class="link">View project</a>
+        </article>
+        <article class="card project">
+          <div class="thumb t3"><span>Placeholder</span></div>
+          <small class="cat">Web Design</small>
+          <h3>Personal Website Designs</h3>
+          <p>Modern personal sites that show people's work clearly.</p>
+          <a href="#contact" class="link">View project</a>
+        </article>
+        <article class="card project">
+          <div class="thumb t4"><span>Placeholder</span></div>
+          <small class="cat">Branding</small>
+          <h3>Digital Branding Concepts</h3>
+          <p>Logo and brand identity ideas for digital projects.</p>
+          <a href="#contact" class="link">View project</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact reveal">
+      <h2>Have a <span class="grad">Project in Mind?</span></h2>
+      <p class="intro">Let's turn your ideas into something amazing. Contact me to discuss your next project or collaboration.</p>
+      <div class="cards three">
+        <a class="card cbtn" href="https://wa.me/201122207606" target="_blank" rel="noopener noreferrer"><small>WhatsApp Contact</small><strong>01122207606</strong></a>
+        <a class="card cbtn" href="https://wa.me/201027944588" target="_blank" rel="noopener noreferrer"><small>Business Inquiries</small><strong>01027944588</strong></a>
+        <a class="card cbtn" href="https://www.facebook.com/share/1ByYYAqotn/" target="_blank" rel="noopener noreferrer"><small>Facebook</small><strong>Visit my profile</strong></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo" aria-label="MYM home">MYM</a>
+    <nav aria-label="Footer"><a href="#home">Home</a><a href="#about">About Me</a><a href="#skills">Skills</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></nav>
+    <p>© 2026 Mohammed Yasser Mohammed. All Rights Reserved.</p>
+  </footer>
+
+  <a class="float-wa" href="https://wa.me/201122207606" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">WA</a>
+  <button class="to-top" id="toTop" aria-label="Back to top">&uarr;</button>
+  <script src="script.js"></script>
+</body>
+</html>
