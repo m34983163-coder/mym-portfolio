@@ -30,7 +30,7 @@ a { color: inherit; text-decoration: none; }
   background-size: 48px 48px; animation: gridmove 12s linear infinite;
   mask-image: radial-gradient(ellipse at center, #000 30%, transparent 80%); -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 80%); }
 @keyframes gridmove { to { background-position: 48px 48px; } }
-.mouse-glow { contain: strict; position: fixed; top: 0; left: 0; width: 400px; height: 400px; z-index: -1; pointer-events: none; opacity: 0;
+.mouse-glow { display: none; contain: strict; position: fixed; top: 0; left: 0; width: 400px; height: 400px; z-index: -1; pointer-events: none; opacity: 0;
   background: radial-gradient(circle, rgba(34,211,238,.14), transparent 65%); will-change: transform; }
 
 /* Navigation */
@@ -153,3 +153,8 @@ html[dir="rtl"] .float-wa, html[dir="rtl"] .to-top { right: auto; left: 16px; }
   .section { padding-top: 56px; }
   .card { padding: 20px; }
 }
+
+/* Mouse glow only on real desktop mouse. A 400px fixed element on a phone made the page pan sideways. */
+@media (hover: hover) and (pointer: fine) and (min-width: 900px) { .mouse-glow { display: block; } }
+html, body { overflow-x: clip; }
+body { touch-action: pan-y pinch-zoom; }
