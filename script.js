@@ -13,7 +13,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(fals
 
 // 2. Profile image fallback: if the photo fails to load, show the MYM placeholder
 const img = document.getElementById('profileImg');
-img.addEventListener('error', () => { img.style.display = 'none'; });
+img.addEventListener('error', () => { img.style.display = 'none'; document.querySelector('.placeholder').style.display = 'grid'; });
 
 // 3. Sections fade in when scrolled into view
 const reveals = document.querySelectorAll('.reveal');
@@ -43,7 +43,7 @@ if (canHover && !reduce) {
 // 6. Language switch (English / Arabic)
 // Add more translations by adding a line: "English text": "Arabic text"
 const AR = {
-  "Home":"الرئيسية","About Me":"من أنا","Skills":"المهارات","Portfolio":"الأعمال","Contact":"تواصل",
+  "Home":"الرئيسية","Software Engineer":"مهندس برمجيات","Image Designer":"مصمم صور","About Me":"من أنا","Skills":"المهارات","Portfolio":"الأعمال","Contact":"تواصل",
   "AVAILABLE FOR WORK":"متاح للعمل","Hi, I'm":"أهلاً، أنا","Mohammed Yasser Mohammed":"محمد ياسر محمد",
   "Software Engineer & Image Designer":"مهندس برمجيات ومصمم صور",
   "I build clean software and design creative visuals. I love turning ideas into modern digital experiences that look good and work well.":"أبني برمجيات نظيفة وأصمم صورًا إبداعية. أحب تحويل الأفكار إلى تجارب رقمية حديثة بشكل جميل وتعمل بكفاءة.",
